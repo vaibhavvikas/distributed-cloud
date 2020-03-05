@@ -11,7 +11,7 @@ Similar to Google drive, where user can store and retrieve any Objects.
   ```
   {
     
-    "storage_directory":"C:\\uploads",
+    "storage_directory":"\home\<username>\uploads",
     "node_count":4,
     "size_per_slice":1024,
     "redundancy_count":1,
