@@ -50,14 +50,14 @@ After that go to POSTMAN and execute the commands
 
 ## MILESTONES ##
 
-### - [x] MILESTONE 1 ###
+### MILESTONE 1 (Completed) ###
 Goal: Basic API Implementation
 * Ability to Upload a file to the server
 * Download the file
 * List all the files on the server
 * Delete a file
 
-### - [x] MILESTONE 2 ###
+### MILESTONE 2 (Completed) ###
 Goal: Encryption + Load Balancing
 * Uploaded file must be broken down in to chunks as mentioned on the config
 * Nodes ( folders ) must be created as per the node count on config
@@ -65,7 +65,7 @@ Goal: Encryption + Load Balancing
 * File chunks must be moved to the nodes with API Server uploads load balancing. Node with the least number of files must be filled first
 * Metadata file(s) must be created to save information on the file chunks and their location
   
-### - [ ] MILESTONE 3 ###
+### MILESTONE 3 (In Progress)  ###
 Goal: Rendundancy: Files must be accessed even if one or more node goes down.
 * When one or more nodes go down, the file must still be retrievable
 * Redundancy_count = 1 value in config means, file must be retrievable when 1 node goes down.
