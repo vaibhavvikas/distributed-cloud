@@ -50,14 +50,14 @@ After that go to POSTMAN and execute the commands
 
 ## MILESTONES ##
 
-### MILESTONE 1 ###
+### [x] MILESTONE 1 ###
 Goal: Basic API Implementation
 * Ability to Upload a file to the server
 * Download the file
 * List all the files on the server
 * Delete a file
 
-### MILESTONE 2 ###
+### [x] MILESTONE 2 ###
 Goal: Encryption + Load Balancing
 * Uploaded file must be broken down in to chunks as mentioned on the config
 * Nodes ( folders ) must be created as per the node count on config
