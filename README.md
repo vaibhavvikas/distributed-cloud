@@ -64,9 +64,3 @@ Goal: Encryption + Load Balancing
 * Nodes must be named as node_<number> Eg. node_1
 * File chunks must be moved to the nodes with API Server uploads load balancing. Node with the least number of files must be filled first
 * Metadata file(s) must be created to save information on the file chunks and their location
-  
-### MILESTONE 3 (In Progress)  ###
-Goal: Rendundancy: Files must be accessed even if one or more node goes down.
-* When one or more nodes go down, the file must still be retrievable
-* Redundancy_count = 1 value in config means, file must be retrievable when 1 node goes down.
-* Redundancy level must increase as per the value specified on the config
