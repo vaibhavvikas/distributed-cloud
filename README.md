@@ -1,3 +1,8 @@
+![GitHub top language](https://img.shields.io/github/languages/top/vaibhavvikas/distributed-cloud) 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vaibhavvikas/distributed-cloud)
+![GitHub stars](https://img.shields.io/github/stars/vaibhavvikas/distributed-cloud)
+![GitHub forks](https://img.shields.io/github/forks/vaibhavvikas/distributed-cloud)
+
 # DistributedCloud
 Cloud Storage Object with End to End Encryption
 
