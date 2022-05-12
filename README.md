@@ -4,7 +4,8 @@
 ![GitHub forks](https://img.shields.io/github/forks/vaibhavvikas/distributed-cloud)
 
 # DistributedCloud
-Cloud Storage Object with End to End Encryption
+#### KLA+ February 2020 Hackathon, NIT Trichy
+Cloud Storage Object with End to End Encryption.
 
 Design and Implement a distributed cloud storage.
 Similar to Google drive, where user can store and retrieve any Objects.
