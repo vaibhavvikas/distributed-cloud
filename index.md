@@ -1,37 +1,73 @@
-## Welcome to GitHub Pages
+**[Home](https://vaibhavvikas.github.io/) >> [Projects](https://vaibhavvikas.github.io/projects.html) >> Distributed Cloud**
 
-You can use the [editor on GitHub](https://github.com/vaibhavvikas/distributed-cloud/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Distributed Cloud
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![GitHub top language](https://img.shields.io/github/languages/top/vaibhavvikas/distributed-cloud) 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vaibhavvikas/distributed-cloud)
+![GitHub stars](https://img.shields.io/github/stars/vaibhavvikas/distributed-cloud)
+![GitHub forks](https://img.shields.io/github/forks/vaibhavvikas/distributed-cloud)
 
-### Markdown
+#### KLA+ February 2020 Hackathon, NIT Trichy
+Cloud Storage Object with End to End Encryption.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Design and Implement a distributed cloud storage.
+Similar to Google drive, where user can store and retrieve any Objects.
 
-```markdown
-Syntax highlighted code block
+## Basic Functionalities: ##
+* One Web Server
+* REST API
+* Config File
+  ```
+  {
+    
+    "storage_directory":"\home\<username>\uploads",
+    "node_count":4,
+    "size_per_slice":1024,
+    "redundancy_count":1,
+    "peers":[
+        "http://127.0.0.1:5000",
+        "http://127.0.0.1:5001",
+        "http://127.0.0.1-lt:5002",
+        "http://127.0.0.1-lt:5003"
+    ]
+  }
+  ```
+ ### Methods ###
+ * #### PUT ####
+    * Store an incoming file and return the ID of the resource
+    * PUT: http://localhost:5000/files
+ * #### GET ####
+    * Download the file for a given <ID>
+    * GET: http://localhost:5000/files/{id}
+ * #### LIST ####
+    * List the files stored in the server
+    * GET: http://localhost:5000/files/list
+ * #### DELETE ####
+    * Delete the file for a given <ID>
+    * DELETE: http://localhost:5000/files/{id}
 
-# Header 1
-## Header 2
-### Header 3
+How to run:
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+$ python3 main.py
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+After that go to POSTMAN and execute the commands
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vaibhavvikas/distributed-cloud/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## MILESTONES ##
 
-### Support or Contact
+### MILESTONE 1 (Completed) ###
+Goal: Basic API Implementation
+* Ability to Upload a file to the server
+* Download the file
+* List all the files on the server
+* Delete a file
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### MILESTONE 2 (Completed) ###
+Goal: Encryption + Load Balancing
+* Uploaded file must be broken down in to chunks as mentioned on the config
+* Nodes ( folders ) must be created as per the node count on config
+* Nodes must be named as node_<number> Eg. node_1
+* File chunks must be moved to the nodes with API Server uploads load balancing. Node with the least number of files must be filled first
+* Metadata file(s) must be created to save information on the file chunks and their location
