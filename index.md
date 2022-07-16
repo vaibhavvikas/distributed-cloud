@@ -16,22 +16,24 @@ Similar to Google drive, where user can store and retrieve any Objects.
 * One Web Server
 * REST API
 * Config File
-  ```
-  {
-    
-    "storage_directory":"\home\<username>\uploads",
-    "node_count":4,
-    "size_per_slice":1024,
-    "redundancy_count":1,
-    "peers":[
-        "http://127.0.0.1:5000",
-        "http://127.0.0.1:5001",
-        "http://127.0.0.1-lt:5002",
-        "http://127.0.0.1-lt:5003"
-    ]
-  }
-  ```
- ### Methods
+
+```
+{
+
+  "storage_directory":"\home\<username>\uploads",
+  "node_count":4,
+  "size_per_slice":1024,
+  "redundancy_count":1,
+  "peers":[
+      "http://127.0.0.1:5000",
+      "http://127.0.0.1:5001",
+      "http://127.0.0.1-lt:5002",
+      "http://127.0.0.1-lt:5003"
+  ]
+}
+```
+ 
+### Methods
  * #### PUT
     * Store an incoming file and return the ID of the resource
     * PUT: http://localhost:5000/files
@@ -54,7 +56,6 @@ $ python3 main.py
 ```
 
 After that go to POSTMAN and execute the commands
-
 
 ## MILESTONES
 
