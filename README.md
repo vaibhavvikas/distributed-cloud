@@ -1,10 +1,11 @@
-![GitHub top language](https://img.shields.io/github/languages/top/vaibhavvikas/distributed-cloud) 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vaibhavvikas/distributed-cloud)
-![GitHub stars](https://img.shields.io/github/stars/vaibhavvikas/distributed-cloud)
-![GitHub forks](https://img.shields.io/github/forks/vaibhavvikas/distributed-cloud)
-
 # DistributedCloud
-#### KLA+ February 2020 Hackathon, NIT Trichy
+
+[![GitHub top language](https://img.shields.io/github/languages/top/vaibhavvikas/distributed-cloud)](#)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vaibhavvikas/distributed-cloud)](#)
+[![GitHub stars](https://img.shields.io/github/stars/vaibhavvikas/distributed-cloud)](#)
+[![GitHub forks](https://img.shields.io/github/forks/vaibhavvikas/distributed-cloud)](#)
+
+### KLA+ February 2020 Hackathon, NIT Trichy
 Cloud Storage Object with End to End Encryption.
 
 Design and Implement a distributed cloud storage.
@@ -29,17 +30,17 @@ Similar to Google drive, where user can store and retrieve any Objects.
     ]
   }
   ```
- ### Methods ###
- * #### PUT ####
+ ### Methods
+ * #### PUT
     * Store an incoming file and return the ID of the resource
     * PUT: http://localhost:5000/files
- * #### GET ####
+ * #### GET
     * Download the file for a given <ID>
     * GET: http://localhost:5000/files/{id}
- * #### LIST ####
+ * #### LIST
     * List the files stored in the server
     * GET: http://localhost:5000/files/list
- * #### DELETE ####
+ * #### DELETE
     * Delete the file for a given <ID>
     * DELETE: http://localhost:5000/files/{id}
 
@@ -54,16 +55,16 @@ $ python3 main.py
 After that go to POSTMAN and execute the commands
 
 
-## MILESTONES ##
+## MILESTONES
 
-### MILESTONE 1 (Completed) ###
+### MILESTONE 1 (Completed)
 Goal: Basic API Implementation
 * Ability to Upload a file to the server
 * Download the file
 * List all the files on the server
 * Delete a file
 
-### MILESTONE 2 (Completed) ###
+### MILESTONE 2 (Completed)
 Goal: Encryption + Load Balancing
 * Uploaded file must be broken down in to chunks as mentioned on the config
 * Nodes ( folders ) must be created as per the node count on config
