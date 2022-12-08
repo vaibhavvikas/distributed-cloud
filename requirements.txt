@@ -1,7 +1,7 @@
 attrs==19.3.0
 Automat==0.8.0
 blinker==1.4
-certifi==2019.11.28
+certifi==2022.12.7
 chardet==3.0.4
 Click==7.0
 cloud-init==20.1
